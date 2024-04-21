@@ -8,6 +8,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import Collapse from '@/kit/Collapse';
 import Swap from '@/kit/Swap';
+import ThemeSwitch from './ThemeSwitch';
 
 
 export default function MainHeader() {
@@ -74,16 +75,19 @@ export default function MainHeader() {
               <NavbarLinks onClose={() => setIsExpanded(false)} />
             </div>
             <div className="max-sm:grow" />
-            <Swap
-              as="button"
-              onElement={<FontAwesomeIcon className="h-6 w-6" icon={faXmark} />}
-              offElement={<FontAwesomeIcon className="h-6 w-6" icon={faBars} />}
-              onClick={() => setIsExpanded(p => !p)}
-              active={isExpanded}
-              className={classNames(
-                'sm:hidden',
-              )}
-            />
+            <ul className="flex items-center gap-2">
+              <ThemeSwitch />
+              <Swap
+                as="button"
+                onElement={<FontAwesomeIcon className="h-6 w-6" icon={faXmark} />}
+                offElement={<FontAwesomeIcon className="h-6 w-6" icon={faBars} />}
+                onClick={() => setIsExpanded(p => !p)}
+                active={isExpanded}
+                className={classNames(
+                  'sm:hidden',
+                )}
+              />
+            </ul>
           </div>
           <Collapse open={isExpanded} className="sm:hidden">
             <NavbarLinks onClose={() => setIsExpanded(false)} />

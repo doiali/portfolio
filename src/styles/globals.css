@@ -19,4 +19,8 @@
     line-height: var(--cm-lineHeight-md);
     font-weight: 400;
   }
+
+  body {
+    @apply transition-colors duration-300
+  }
 }
