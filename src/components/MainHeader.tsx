@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import Collapse from '@/kit/Collapse';
+import Swap from '@/kit/Swap';
 
 
 export default function MainHeader() {
@@ -73,15 +74,16 @@ export default function MainHeader() {
               <NavbarLinks onClose={() => setIsExpanded(false)} />
             </div>
             <div className="max-sm:grow" />
-            <button
+            <Swap
+              as="button"
+              onElement={<FontAwesomeIcon className="h-6 w-6" icon={faXmark} />}
+              offElement={<FontAwesomeIcon className="h-6 w-6" icon={faBars} />}
               onClick={() => setIsExpanded(p => !p)}
+              active={isExpanded}
               className={classNames(
-                'p-1 sm:hidden text-primary',
+                'sm:hidden',
               )}
-            >
-              <FontAwesomeIcon className="dui-swap-off h-6 w-6" icon={faBars} />
-              {/* <FontAwesomeIcon className="dui-swap-on h-6 w-6" icon={faXmark} /> */}
-            </button>
+            />
           </div>
           <Collapse open={isExpanded} className="sm:hidden">
             <NavbarLinks onClose={() => setIsExpanded(false)} />
@@ -111,15 +113,15 @@ const NavbarLinks = memo(function NavbarLinks({ onClose }: { onClose?: () => voi
   const segment = useSelectedLayoutSegment();
   return (
     <>
-      <ul className="flex gap-2 max-lg:py-2 lg:gap-4 max-sm:flex-col sm:items-center">
-        {links.map(({ href, label,  }) => {
+      <ul className="flex gap-2 max-sm:pb-4 sm:gap-4 max-sm:flex-col sm:items-center">
+        {links.map(({ href, label, }) => {
           const isActive = href.slice(1) === segment;
           return (
-            <li key={(href + label)} className="hover:text-primary text-sm ps-1">
+            <li key={(href + label)} className="hover:text-primary text-sm">
               <Link
                 onClick={onClose}
                 className={classNames(
-                  'gap-4 sm:gap-1 sm:pt-1 flex sm:flex-col items-center sm:border-b sm:p-1',
+                  'gap-4 sm:gap-1 sm:pt-1 flex sm:flex-col items-center sm:border-b',
                   {
                     'text-primary border-primary': isActive,
                     'border-transparent': !isActive,
@@ -132,11 +134,6 @@ const NavbarLinks = memo(function NavbarLinks({ onClose }: { onClose?: () => voi
             </li>
           );
         })}
-        <li className="grow" />
-        <li className="flex items-center gap-4">
-          {/* <ThemeSwitch className="" />
-          <LocaleMenu className="px-2" /> */}
-        </li>
       </ul>
     </>
   );
