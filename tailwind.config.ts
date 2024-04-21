@@ -1,12 +1,21 @@
 import type { Config } from "tailwindcss";
+const customPlugins = require('./src/styles/plugins');
+
 
 const config: Config = {
   content: [
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    ...customPlugins,
+  ],
 };
 export default config;

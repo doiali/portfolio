@@ -1,0 +1,22 @@
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root, [data-theme] {
+    background-color: hsl(var(--cm-background)/var(--tw-bg-opacity,1));
+    color: hsl(var(--cm-body)/var(--tw-text-opacity,1));
+  }
+
+  *, ::before, ::after {
+    border-color: hsl(var(--cm-border) / var(--tw-border-opacity, 1));
+  }
+
+  body {
+    font-family: var(--cm-fontFamily-inter);
+    font-size: var(--cm-fontSize-md);
+    line-height: var(--cm-lineHeight-md);
+    font-weight: 400;
+  }
+}

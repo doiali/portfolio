@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main>
-      Hello World!
+    <main className="mt-16 container">
+      <div className="">
+        Hello World!
+      </div>
     </main>
   );
 }
