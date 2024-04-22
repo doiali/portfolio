@@ -1,4 +1,4 @@
-import PageContainer from './PageContainer';
+import PageContainer from './common/PageContainer';
 
 export default function ProjectsPage() {
   return (
