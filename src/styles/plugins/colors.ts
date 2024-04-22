@@ -17,8 +17,8 @@ type Palette = {
   };
 
 const palette: Palette = {
-  body: '#374151',
-  bodySecondary: '#999CA0',
+  body: '#383838',
+  bodySecondary: '#525252',
   border: '#dcdcdc',
   background: '#F5F5F5',
   paper: '#FFFFFF',
@@ -34,8 +34,8 @@ const palette: Palette = {
 
 const paletteDark: Palette = {
   ...palette,
-  body: '#d1d5db',
-  bodySecondary: '#999CA0',
+  body: '#d1d1d1',
+  bodySecondary: '#a9a9a9',
   border: '#464646',
   background: '#1C1A17',
   paper: '#272421',

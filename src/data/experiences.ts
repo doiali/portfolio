@@ -1,4 +1,4 @@
-type Experience = {
+export type Experience = {
   slug: string;
   title: string;
   company?: {
@@ -13,7 +13,7 @@ type Experience = {
   description?: string;
 };
 
-const experiences: Experience[] = [
+export const experiences: Experience[] = [
   {
     slug: 'applylink-frontend-developer',
     title: 'Senior Frontend Developer',
