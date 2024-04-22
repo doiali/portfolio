@@ -1,20 +1,19 @@
 'use client';
 
-import { formatDateDuration, formatDateRange } from '@/utils/formatters';
+import { formatDateRange, formatYMDate } from '@/utils/formatters';
 
-export default function TimelineDateRange({ startDate, endDate }: {
+export default function TimelineDateRange({ startDate, endDate, date }: {
   startDate?: string;
   endDate?: string;
+  date?: string;
 }) {
-  if (!startDate) return null;
-  const start = new Date(startDate);
+  const start = startDate ? new Date(startDate) : undefined;
   const end = endDate ? new Date(endDate) : new Date();
   return (
     <div className="absolute inline-flex top-0 rounded-md -translate-y-1/2 bg-paper">
       <span className="bg-secondary/5 px-4 text-sm font-bold text-secondary">
-        {startDate ? formatDateRange(start, end) : <>&nbsp;</>}
-        {/* {' '}
-        {formatDateDuration(start, end, true)} */}
+        {start && formatDateRange(start, end)}
+        {!start && date && formatYMDate(new Date(date))}
       </span>
     </div>
   );

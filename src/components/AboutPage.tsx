@@ -3,6 +3,8 @@ import { experiences } from '@/data/experiences';
 import ExperienceList from './common/ExperienceList';
 import EducationList from './common/EducationList';
 import { educations } from '@/data/educations';
+import HonorsList from './common/AwardsList';
+import { honors } from '@/data/honors';
 
 export default function AboutPage() {
   return (
@@ -11,6 +13,7 @@ export default function AboutPage() {
       <p className="mt-4">Hello, I am Alireza Bagheri.</p>
       <ExperienceList data={experiences} />
       <EducationList data={educations} />
+      <HonorsList data={honors} />
     </PageContainer>
   );
 }
