@@ -22,7 +22,7 @@ export function ExperienceItem({ data }: { data: Experience; }) {
   return (
     <TimelineBox>
       <TimelineDateRange startDate={startDate} endDate={endDate} />
-      <div className="flex items-start gap-4">
+      <div className="text-bodySecondary flex items-start gap-4">
         <LinkOrBox href={company?.link} target="_blank" className="shrink-0">
           <ImageWithFallback
             src={company?.logo}
@@ -40,13 +40,13 @@ export function ExperienceItem({ data }: { data: Experience; }) {
               {company?.title}
             </LinkOrBox>
           </h3>
-          <h4 className="text-md font-bold text-bodySecondary">{title}</h4>
-          <p className="text-xs text-bodySecondary flex flex-col mb-2">
+          <h4 className="text-md font-bold">{title}</h4>
+          <p className="text-xs flex flex-col mb-2">
             {links?.map(link => (
               <Link key={link} href={link} target="_blank">{link}</Link>
             ))}
           </p>
-          <p className="text-sm text-bodySecondary">{description}</p>
+          <p className="text-sm">{description}</p>
         </div>
       </div>
     </TimelineBox>

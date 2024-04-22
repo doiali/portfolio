@@ -3,7 +3,7 @@ import { experiences } from '@/data/experiences';
 import ExperienceList from './common/ExperienceList';
 import EducationList from './common/EducationList';
 import { educations } from '@/data/educations';
-import HonorsList from './common/AwardsList';
+import HonorsList from './common/HonorsList';
 import { honors } from '@/data/honors';
 
 export default function AboutPage() {
