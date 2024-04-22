@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
       link: 'https://filmnet.ir/'
     },
     location: 'Tehran, Iran',
-    startDate: '2022-01-01',
+    startDate: '2021-01-01',
     endDate: '2022-02-01',
     description: 'Led a team of 6 developers to create a platform for watching movies and TV shows',
   },
