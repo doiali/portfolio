@@ -103,13 +103,13 @@ const links = [
     href: '/', label: 'Home',
   },
   {
-    href: '/', label: 'About',
+    href: '/about', label: 'About',
   },
   {
-    href: '/', label: 'Works',
+    href: '/projects', label: 'Projects',
   },
   {
-    href: '/', label: 'Passions',
+    href: '/favorites', label: 'Favorites',
   },
 ] as const;
 
@@ -119,7 +119,7 @@ const NavbarLinks = memo(function NavbarLinks({ onClose }: { onClose?: () => voi
     <>
       <ul className="flex gap-2 max-sm:pb-4 sm:gap-4 max-sm:flex-col sm:items-center">
         {links.map(({ href, label, }) => {
-          const isActive = href.slice(1) === segment;
+          const isActive = href.slice(1) === segment || (href === '/' && !segment);
           return (
             <li key={(href + label)} className="hover:text-primary text-sm">
               <Link
