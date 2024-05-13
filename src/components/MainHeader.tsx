@@ -108,9 +108,6 @@ const links = [
   {
     href: '/projects', label: 'Projects',
   },
-  {
-    href: '/favorites', label: 'Favorites',
-  },
 ] as const;
 
 const NavbarLinks = memo(function NavbarLinks({ onClose }: { onClose?: () => void; }) {
