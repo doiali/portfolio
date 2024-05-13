@@ -4,10 +4,11 @@ import { Inter } from "next/font/google";
 import MainHeader from '@/components/MainHeader';
 import { ThemeProvider } from 'next-themes';
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ['latin'],
   variable: '--cm-fontFamily-inter',
 });
+
 export const metadata: Metadata = {
   title: "Alireza Bagheri",
   description: "Senior Frontend Developer",
