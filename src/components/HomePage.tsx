@@ -10,6 +10,7 @@ export default function HomePage() {
     <PageContainer>
       <div>
         <Image
+          priority
           src={mypic}
           className="w-[min(100%,300px)] mx-auto lg:float-right rounded-lg"
           alt="Alireza Bagheri"
