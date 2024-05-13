@@ -18,7 +18,9 @@ export default function ProjectItem({ data }: { data: Project; }) {
         </ul>
       )}
       {description && (
-        <p className="text-sm my-2 text-bodySecondary">{description}</p>
+        <>
+          <p className="text-sm my-2 text-bodySecondary">{description}</p>
+        </>
       )}
       {tools && (
         <ul className="flex flex-wrap gap-2 items-center my-2">
