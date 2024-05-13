@@ -1,5 +1,6 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 export default function TimelineSection({ title, icon, children }: {
   title: string;
@@ -8,7 +9,7 @@ export default function TimelineSection({ title, icon, children }: {
 }) {
   return (
     <div className="my-8 relative flex flex-col gap-6">
-      <h2 className="text-2xl font-bold">
+      <h2 id={title.replace(/ /g, '-').toLowerCase()} className="text-2xl font-bold">
         {icon && <FontAwesomeIcon icon={icon} className="me-4" />}
         {title}
       </h2>
