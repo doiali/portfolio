@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import MainHeader from '@/components/MainHeader';
 import { ThemeProvider } from 'next-themes';
+import myIamge from '@images/alireza_bagheri.jpg';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alireza Bagheri | Portfolio",
+  title: "Alireza Bagheri",
   description: "Senior frontend developer passionate about building fast, high-performance applications with modern web technologies.",
   openGraph: {
     title: '',
@@ -20,14 +21,16 @@ export const metadata: Metadata = {
     siteName: "Alireza Bagheri's Portfolio",
     images: [
       {
-        url: "/images/alireza_bagheri.jpg",
+        url: myIamge.src,
         width: 640,
         height: 640,
         alt: "Alireza-Bagheri",
       },
     ],
   },
-
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
