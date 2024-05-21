@@ -32,7 +32,7 @@ export const contactInfos: ContactInfo[] = [
   {
     name: 'Instagram',
     value: 'pooriabgr',
-    url: 'https://www.instagram.com/pouriabgr/',
+    url: 'https://www.instagram.com/pooriabgr/',
     icon: faInstagram,
   },
   {
