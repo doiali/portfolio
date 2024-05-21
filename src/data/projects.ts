@@ -29,7 +29,7 @@ export type Project = {
   date?: string;
 };
 
-export const projects: Project[] = [
+export const getProjects: () => Project[] = () => [
   {
     slug: 'applylink',
     title: 'ApplyLink',

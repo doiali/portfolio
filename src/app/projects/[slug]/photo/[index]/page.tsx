@@ -1,10 +1,10 @@
+import 'server-only';
 import PageContainer from '@/components/common/PageContainer';
-import { projects } from '@/data/projects';
+import { getProjects } from '@/data/projects';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import 'server-only';
 
-export default function Page({
+export default async function Page({
   params: { slug, index },
 }: {
   params: {
@@ -12,7 +12,7 @@ export default function Page({
     index: number;
   };
 }) {
-  const photo = projects.find((project) => project.slug === slug)?.gallery?.[index - 1];
+  const photo = getProjects().find((project) => project.slug === slug)?.gallery?.[index - 1];
   if (!photo) {
     notFound();
   }
