@@ -8,6 +8,7 @@ import applylink_home_en_dark from './gallery/applylink_home_en_dark.png';
 import applylink_home_en_light from './gallery/applylink_home_en_light.png';
 import applylink_home_fa_dark from './gallery/applylink_home_fa_dark.png';
 import applylink_profile_hejazizo from './gallery/applylink_profile_hejazizo.png';
+import applylink_event from './gallery/applylink_event.png';
 import applylink_profile_hejazizo_experiences from './gallery/applylink_profile_hejazizo_experiences.png';
 import applylink_roadmap from './gallery/applylink_roadmap.png';
 import applylink_signup from './gallery/applylink_signup.png';
@@ -59,6 +60,7 @@ export const getProjects: () => Project[] = () => [
       applylink_home_en_light,
       applylink_home_fa_dark,
       applylink_helpboard_2,
+      applylink_event,
       applylink_profile_hejazizo,
       applylink_helpboard,
       // applylink_profile_hejazizo_experiences,
