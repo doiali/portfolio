@@ -10,8 +10,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alireza Bagheri",
-  description: "Senior Frontend Developer",
+  title: "Alireza Bagheri | Portfolio",
+  description: "Senior frontend developer passionate about building fast, high-performance applications with modern web technologies.",
+  openGraph: {
+    title: '',
+    type: "website",
+    locale: "en_US",
+    url: "https://alireza-bagheri.me",
+    siteName: "Alireza Bagheri's Portfolio",
+    images: [
+      {
+        url: "/images/alireza_bagheri.jpg",
+        width: 640,
+        height: 640,
+        alt: "Alireza-Bagheri",
+      },
+    ],
+  },
+
 };
 
 export default function RootLayout({
