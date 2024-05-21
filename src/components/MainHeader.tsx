@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Collapse from '@/kit/Collapse';
 import Swap from '@/kit/Swap';
 import ThemeSwitch from './ThemeSwitch';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function MainHeader() {
@@ -84,6 +85,9 @@ export default function MainHeader() {
               />
             </span>
             <span className="flex items-center gap-2">
+              <Link className="flex" href="https://github.com/doiali/portfolio" target="_blank">
+                <FontAwesomeIcon className="h-5 w-5" icon={faGithub} />
+              </Link>
               <ThemeSwitch />
             </span>
           </div>
