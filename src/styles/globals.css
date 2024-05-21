@@ -1,7 +1,8 @@
 @import "@fortawesome/fontawesome-svg-core/styles.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./components.css";
+@import "tailwindcss/utilities";
 
 @layer base {
   :root, [data-theme] {
@@ -23,4 +24,8 @@
   body {
     @apply transition-colors duration-300
   }
+}
+
+@layer components {
+
 }

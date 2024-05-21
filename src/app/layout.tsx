@@ -21,11 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.variable}>
+      <body className={`${inter.variable}`}>
         <ThemeProvider>
           <div className="min-h-[100vh] flex flex-col">
             <MainHeader />
-            <main className="grow pt-18">
+            <main className="grow cm-scrollbar">
               {children}
             </main>
           </div>
