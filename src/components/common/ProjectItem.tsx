@@ -1,4 +1,5 @@
 import { Project } from '@/data/projects';
+import Image from 'next/image';
 
 export default function ProjectItem({ data }: { data: Project; }) {
   const { slug, title, date, description, links, points, tools, gallery } = data;
@@ -35,6 +36,22 @@ export default function ProjectItem({ data }: { data: Project; }) {
             <li className="text-sm text-bodySecondary" key={i}>{point}</li>
           ))}
         </ul>
+      )}
+      {gallery && gallery?.length > 0 && (
+        <div className="flex overflow-auto ">
+          <ul className="flex gap-2 my-4">
+            {gallery.map((data, i) => (
+              <li className="relative overflow-hidden w-32 h-0 pb-18" key={data.src}>
+                <Image
+                  src={data}
+                  alt=""
+                  sizes='200px'
+                  className="absolute w-full"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
