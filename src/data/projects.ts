@@ -1,4 +1,17 @@
+import 'server-only';
 import { StaticImageData } from 'next/image';
+import applylink_dashboard_helpboard_bookmarks from './gallery/applylink_dashboard_helpboard_bookmarks.png';
+import applylink_dashboard_helpboard_overview from './gallery/applylink_dashboard_helpboard_overview.png';
+import applylink_helpboard from './gallery/applylink_helpboard.png';
+import applylink_helpboard_2 from './gallery/applylink_helpboard_2.png';
+import applylink_home_en_dark from './gallery/applylink_home_en_dark.png';
+import applylink_home_en_light from './gallery/applylink_home_en_light.png';
+import applylink_home_fa_dark from './gallery/applylink_home_fa_dark.png';
+import applylink_profile_hejazizo from './gallery/applylink_profile_hejazizo.png';
+import applylink_profile_hejazizo_experiences from './gallery/applylink_profile_hejazizo_experiences.png';
+import applylink_roadmap from './gallery/applylink_roadmap.png';
+import applylink_signup from './gallery/applylink_signup.png';
+
 
 export type Project = {
   slug: string;
@@ -7,7 +20,7 @@ export type Project = {
   points?: string[];
   tools?: string[];
   links?: string[];
-  gallery?: (string | StaticImageData)[];
+  gallery?: (StaticImageData)[];
   date?: string;
 };
 
@@ -26,6 +39,19 @@ export const projects: Project[] = [
     tools: ['NextJS', 'Tailwind-CSS', 'React-Query', 'Next-INTL'],
     date: '2024',
     links: ['https://applylink.ai/'],
+    gallery: [
+      applylink_home_en_dark,
+      applylink_home_en_light,
+      applylink_home_fa_dark,
+      applylink_helpboard_2,
+      applylink_profile_hejazizo,
+      applylink_profile_hejazizo_experiences,
+      applylink_helpboard,
+      applylink_roadmap,
+      applylink_signup,
+      applylink_dashboard_helpboard_bookmarks,
+      applylink_dashboard_helpboard_overview,
+    ],
   },
   {
     slug: 'gp',
