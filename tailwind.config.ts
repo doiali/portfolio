@@ -13,11 +13,16 @@ const config: Config = {
       'lg': '992px',
       'xl': '1200px',
     },
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '1rem',
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+        },
       },
+      spacing: {
+        '18': '4.5rem',
+      }
     },
   },
   plugins: [
