@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import PageContainer from './common/PageContainer';
 import Image from 'next/image';
-import mypic from './sabalan.jpg';
+import mypic from '@images/alireza_bagheri.jpg';
 import { contactInfos } from '@/data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
