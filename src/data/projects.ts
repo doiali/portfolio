@@ -21,6 +21,11 @@ import filmnet_kids from './gallery/filmnet_kids.jpg';
 import filmnet_single from './gallery/filmnet_single.jpg';
 import filmnet_videos from './gallery/filmnet_videos.jpg';
 import filmnet_profile from './gallery/filmnet_profile.jpg';
+import tv_filmnet_home from './gallery/tv_filmnet_home.jpg';
+import tv_filmnet_search from './gallery/tv_filmnet_search.jpg';
+import tv_filmnet_single from './gallery/tv_filmnet_single.jpg';
+import tv_filmnet_details from './gallery/tv_filmnet_details.jpg';
+import tv_filmnet_login from './gallery/tv_filmnet_login.jpg';
 
 
 export type Project = {
@@ -55,12 +60,12 @@ export const getProjects: () => Project[] = () => [
       applylink_home_fa_dark,
       applylink_helpboard_2,
       applylink_profile_hejazizo,
-      applylink_profile_hejazizo_experiences,
       applylink_helpboard,
+      // applylink_profile_hejazizo_experiences,
       applylink_roadmap,
       applylink_signup,
       applylink_dashboard_helpboard_bookmarks,
-      applylink_dashboard_helpboard_overview,
+      // applylink_dashboard_helpboard_overview,
     ],
   },
   {
@@ -125,6 +130,13 @@ export const getProjects: () => Project[] = () => [
     tools: ['NextJS', 'Emotion', 'swr', 'jest', 'React-Testing-Library'],
     date: '2022',
     links: ['https://tv.filmnet.ir/'],
+    gallery: [
+      tv_filmnet_home,
+      tv_filmnet_search,
+      tv_filmnet_single,
+      tv_filmnet_details,
+      tv_filmnet_login,
+    ],
   },
   {
     slug: 'project-manager',
