@@ -11,6 +11,11 @@ import applylink_profile_hejazizo from './gallery/applylink_profile_hejazizo.png
 import applylink_profile_hejazizo_experiences from './gallery/applylink_profile_hejazizo_experiences.png';
 import applylink_roadmap from './gallery/applylink_roadmap.png';
 import applylink_signup from './gallery/applylink_signup.png';
+import oya_home from './gallery/oya_home.png';
+import oya_report from './gallery/oya_report.png';
+import oya_calendar from './gallery/oya_calendar.png';
+import oya_clocks from './gallery/oya_clocks.png';
+import oya_charts from './gallery/oya_charts.png';
 
 
 export type Project = {
@@ -77,6 +82,13 @@ export const projects: Project[] = [
     tools: ['ReactJS', 'Material-UI', 'React-Router', 'SWR', 'Nivo-Charts', 'FastAPI', 'SQLAlchemy', 'PostgreSQL'],
     date: '2023',
     links: ['https://github.com/doiali/oya/'],
+    gallery: [
+      oya_home,
+      oya_report,
+      oya_calendar,
+      oya_clocks,
+      oya_charts,
+    ],
   },
   {
     slug: 'filmnet',
