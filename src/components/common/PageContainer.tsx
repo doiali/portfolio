@@ -4,7 +4,7 @@ export default function PageContainer({
   children?: React.ReactNode;
 }) {
   return (
-    <div className="container mt-16 pt-4">
+    <div className="container mt-16 py-4">
       {children}
     </div>
   );
