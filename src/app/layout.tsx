@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import MainHeader from '@/components/MainHeader';
 import { ThemeProvider } from 'next-themes';
-import myIamge from '@images/alireza_bagheri.jpg';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Alireza Bagheri's Portfolio",
     images: [
       {
-        url: myIamge.src,
+        url: '/images/alireza_bagheri.jpg',
         width: 640,
         height: 640,
         alt: "Alireza-Bagheri",
