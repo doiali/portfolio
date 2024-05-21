@@ -74,20 +74,18 @@ export default function MainHeader() {
             <div className="hidden sm:block grow">
               <NavbarLinks onClose={() => setIsExpanded(false)} />
             </div>
-            <div className="max-sm:grow" />
-            <ul className="flex items-center gap-2">
-              <ThemeSwitch />
+            <span className="flex grow sm:hidden">
               <Swap
                 as="button"
                 onElement={<FontAwesomeIcon className="h-6 w-6" icon={faXmark} />}
                 offElement={<FontAwesomeIcon className="h-6 w-6" icon={faBars} />}
                 onClick={() => setIsExpanded(p => !p)}
                 active={isExpanded}
-                className={classNames(
-                  'sm:hidden',
-                )}
               />
-            </ul>
+            </span>
+            <span className="flex items-center gap-2">
+              <ThemeSwitch />
+            </span>
           </div>
           <Collapse open={isExpanded} className="sm:hidden">
             <NavbarLinks onClose={() => setIsExpanded(false)} />
@@ -118,25 +116,30 @@ const NavbarLinks = memo(function NavbarLinks({ onClose }: { onClose?: () => voi
         {links.map(({ href, label, }) => {
           const isActive = href.slice(1) === segment || (href === '/' && !segment);
           return (
-            <li key={(href + label)} className="hover:text-primary text-sm">
-              <Link
-                onClick={onClose}
-                className={classNames(
-                  'gap-4 sm:gap-1 sm:pt-1 flex sm:flex-col items-center sm:border-b',
-                  {
-                    'text-primary border-primary': isActive,
-                    'border-transparent': !isActive,
-                  }
-                )}
-                href={href}
-              >
-                {label}
-              </Link>
-            </li>
+            <NavbarLink key={href} {...{ href, label, isActive }} />
           );
         })}
       </ul>
     </>
+  );
+});
+
+const NavbarLink = memo(function NavbarLink({ href, label, isActive }: { href: string; label: string; isActive: boolean; }) {
+  return (
+    <li className="hover:text-primary text-sm">
+      <Link
+        className={classNames(
+          'gap-4 sm:gap-1 sm:pt-1 flex sm:flex-col items-center sm:border-b',
+          {
+            'text-primary border-primary': isActive,
+            'border-transparent': !isActive,
+          }
+        )}
+        href={href}
+      >
+        {label}
+      </Link>
+    </li>
   );
 });
 
