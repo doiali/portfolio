@@ -16,6 +16,11 @@ import oya_report from './gallery/oya_report.png';
 import oya_calendar from './gallery/oya_calendar.png';
 import oya_clocks from './gallery/oya_clocks.png';
 import oya_charts from './gallery/oya_charts.png';
+import filmnet_home from './gallery/filmnet_home.jpg';
+import filmnet_kids from './gallery/filmnet_kids.jpg';
+import filmnet_single from './gallery/filmnet_single.jpg';
+import filmnet_videos from './gallery/filmnet_videos.jpg';
+import filmnet_profile from './gallery/filmnet_profile.jpg';
 
 
 export type Project = {
@@ -101,6 +106,13 @@ export const getProjects: () => Project[] = () => [
     tools: ['NextJS', 'Emotion', 'swr', 'jest', 'React-Testing-Library'],
     date: '2022',
     links: ['https://filmnet.ir/'],
+    gallery: [
+      filmnet_home,
+      filmnet_kids,
+      filmnet_single,
+      filmnet_videos,
+      filmnet_profile,
+    ],
   },
   {
     slug: 'tv-filmnet',
