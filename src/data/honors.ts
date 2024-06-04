@@ -19,7 +19,7 @@ export const honors = [
   {
     date: '2013-09-01',
     slug: 'bsc-entry-exam',
-    title: 'Ranked 121 among more than 500,000 participants in the nationwide university\'s entrance exam for BSc. degree',
+    title: 'Ranked 121 among more than 250,000 participants in the nationwide university\'s entrance exam for BSc. degree',
   },
   {
     date: '2012-09-01',
