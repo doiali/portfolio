@@ -6,7 +6,7 @@ export default function ProjectItem({ data }: { data: Project; }) {
   const { slug, title, date, description, links, points, tools, gallery } = data;
 
   return (
-    <div className="py-4 border-t">
+    <div className="py-4 border-t" id={slug}>
       <h2 className="text-2xl font-bold">
         {title}
         {date && <span className="ms-2 font-normal text-xs text-bodySecondary">{date}</span>}
