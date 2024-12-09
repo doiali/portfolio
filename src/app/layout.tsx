@@ -5,6 +5,7 @@ import MainHeader from '@/components/MainHeader';
 import { ThemeProvider } from 'next-themes';
 import { Analytics } from "@vercel/analytics/react";
 import HotjarScript from '@/components/HotjarScript';
+import GoogleTags from '@/components/GoogleTags';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -52,6 +53,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
         <HotjarScript />
+        <GoogleTags />
       </body>
     </html>
   );
