@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import MainHeader from '@/components/MainHeader';
 import { ThemeProvider } from 'next-themes';
 import { Analytics } from "@vercel/analytics/react";
+import HotjarScript from '@/components/HotjarScript';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
         <Analytics />
+        <HotjarScript />
       </body>
     </html>
   );
