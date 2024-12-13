@@ -5,7 +5,6 @@ import EducationList from './common/EducationList';
 import { educations } from '@/data/educations';
 import HonorsList from './common/HonorsList';
 import { honors } from '@/data/honors';
-import Image from 'next/image';
 
 export default function AboutPage() {
   return (
