@@ -8,24 +8,18 @@ export type LinkOrBoxProps<C extends React.ElementType> =
     href?: string;
   }>;
 
-type LinkOrBoxComponent = <C extends React.ElementType = typeof Link>(
-  props: LinkOrBoxProps<C>
-) => React.ReactNode;
-
-const LinkOrBox: LinkOrBoxComponent = React.forwardRef(
-  function LinkOrBox<C extends React.ElementType = typeof Link>(
-    { as, href, className, ...rest }: LinkOrBoxProps<C>,
-    ref?: PolymorphicRef<C>
-  ) {
-    const Component = href ? Link : (as ?? 'div');
-    return (
-      <Component
-        href={href ?? undefined}
-        className={classNames(className)}
-        {...rest} ref={ref}
-      />
-    );
-  }
-);
+function LinkOrBox<C extends React.ElementType = typeof Link>(
+  { as, href, className, ...rest }: LinkOrBoxProps<C>,
+  ref?: PolymorphicRef<C>
+) {
+  const Component = href ? Link : (as ?? 'div');
+  return (
+    <Component
+      href={href ?? undefined}
+      className={classNames(className)}
+      {...rest} ref={ref}
+    />
+  );
+}
 
 export default LinkOrBox;
