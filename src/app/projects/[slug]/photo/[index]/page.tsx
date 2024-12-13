@@ -5,13 +5,14 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 export default async function Page({
-  params: { slug, index },
+  params,
 }: {
-  params: {
+  params: Promise<{
     slug: string;
     index: number;
-  };
+  }>;
 }) {
+  const { slug, index } = await params;
   const photo = getProjects().find((project) => project.slug === slug)?.gallery?.[index - 1];
   if (!photo) {
     notFound();
