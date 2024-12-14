@@ -1,5 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faInstagram, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,10 +24,10 @@ export const contactInfos: ContactInfo[] = [
     icon: faLinkedin,
   },
   {
-    name: 'GitHub',
-    value: 'doiali',
-    url: 'https://www.github.com/doiali/',
-    icon: faGithub,
+    name: 'X',
+    value: 'abagheri1994',
+    url: 'https://x.com/abagheri1994',
+    icon: faXTwitter,
   },
   {
     name: 'Instagram',
@@ -36,9 +36,15 @@ export const contactInfos: ContactInfo[] = [
     icon: faInstagram,
   },
   {
-    name: 'Telegram', 
+    name: 'Telegram',
     value: 'pooriabgr',
     url: 'https://t.me/pooriabgr',
     icon: faTelegram,
-  }
+  },
+  {
+    name: 'GitHub',
+    value: 'doiali',
+    url: 'https://www.github.com/doiali/',
+    icon: faGithub,
+  },
 ];
