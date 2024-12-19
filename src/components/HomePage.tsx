@@ -25,7 +25,7 @@ export default function HomePage() {
           {contactInfos.map(({ icon, name, value, url }) => (
             <li key={name} className="flex items-center gap-4 text-lg">
               <FontAwesomeIcon icon={icon} className="w-6 h-6 text-primary" />
-              <Link href={url} className="text-md" target='_blank'>
+              <Link href={url} target='_blank'>
                 <span>{value}</span>
               </Link>
             </li>

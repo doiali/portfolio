@@ -40,7 +40,7 @@ export function ExperienceItem({ data }: { data: Experience; }) {
               {company?.title}
             </LinkOrBox>
           </h3>
-          <h4 className="text-md font-bold">{title}</h4>
+          <h4 className="text-base font-bold">{title}</h4>
           <p className="text-xs flex flex-col mb-2">
             {links?.map(link => (
               <Link key={link} href={link} target="_blank">{link}</Link>
