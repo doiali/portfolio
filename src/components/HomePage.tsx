@@ -21,11 +21,11 @@ export default function HomePage() {
           <p className="text-xl">Explore my site to learn about me, discover the <Link className="text-primary" href="/projects">projects</Link> I&apos;ve worked on, and understand my <Link className="text-primary" href="/about">experiences</Link>.</p>
           <p className="text-xl">Feel free to reach out if you want to connect or collaborate!</p>
         </div>
-        <ul className="flex flex-col gap-4 my-8 text-bodySecondary">
+        <ul className="flex flex-col gap-4 my-8">
           {contactInfos.map(({ icon, name, value, url }) => (
             <li key={name} className="flex items-center gap-4 text-lg">
               <FontAwesomeIcon icon={icon} className="w-6 h-6 text-primary" />
-              <Link href={url} className="text-md" target='_blank'>
+              <Link href={url} target='_blank'>
                 <span>{value}</span>
               </Link>
             </li>
