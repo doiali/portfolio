@@ -20,7 +20,7 @@ export default function TimelineSection({ title, icon, children }: {
 
 export function TimelineBox({ children }: { children: React.ReactNode; }) {
   return (
-    <div className="relative p-4 rounded-md bg-paper shadow-sm">
+    <div className="relative p-4 rounded-md border-2 shadow-sm">
       {children}
     </div>
   );
