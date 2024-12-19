@@ -1,6 +1,7 @@
 import { Project } from '@/data/projects';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 
 export default function ProjectItem({ data }: { data: Project; }) {
   const { slug, title, date, description, links, points, tools, gallery } = data;
@@ -40,7 +41,7 @@ export default function ProjectItem({ data }: { data: Project; }) {
         </ul>
       )}
       {gallery && gallery?.length > 0 && (
-        <div className="flex overflow-auto ">
+        <ScrollArea className="flex whitespace-nowrap">
           <ul className="flex gap-2 my-4">
             {gallery.map((data, index) => (
               <li className="relative overflow-hidden w-32 h-0 pb-18" key={data.src}>
@@ -56,7 +57,9 @@ export default function ProjectItem({ data }: { data: Project; }) {
               </li>
             ))}
           </ul>
-        </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+
       )}
     </div>
   );
