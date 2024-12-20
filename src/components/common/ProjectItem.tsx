@@ -1,6 +1,7 @@
 import { Project } from '@/data/projects';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 
 export default function ProjectItem({ data }: { data: Project; }) {
   const { slug, title, date, description, links, points, tools, gallery } = data;
@@ -9,7 +10,7 @@ export default function ProjectItem({ data }: { data: Project; }) {
     <div className="py-4 border-t" id={slug}>
       <h2 className="text-2xl font-bold">
         {title}
-        {date && <span className="ms-2 font-normal text-xs text-bodySecondary">{date}</span>}
+        {date && <span className="ms-2 font-normal text-xs">{date}</span>}
       </h2>
       {links && (
         <ul className="flex gap-2">
@@ -22,7 +23,7 @@ export default function ProjectItem({ data }: { data: Project; }) {
       )}
       {description && (
         <>
-          <p className="text-sm my-2 text-bodySecondary">{description}</p>
+          <p className="text-sm my-2">{description}</p>
         </>
       )}
       {tools && (
@@ -35,12 +36,12 @@ export default function ProjectItem({ data }: { data: Project; }) {
       {points && (
         <ul className="list-disc list-inside mt-2">
           {points.map((point, i) => (
-            <li className="text-sm text-bodySecondary" key={i}>{point}</li>
+            <li className="text-sm" key={i}>{point}</li>
           ))}
         </ul>
       )}
       {gallery && gallery?.length > 0 && (
-        <div className="flex overflow-auto ">
+        <ScrollArea className="flex whitespace-nowrap">
           <ul className="flex gap-2 my-4">
             {gallery.map((data, index) => (
               <li className="relative overflow-hidden w-32 h-0 pb-18" key={data.src}>
@@ -56,7 +57,9 @@ export default function ProjectItem({ data }: { data: Project; }) {
               </li>
             ))}
           </ul>
-        </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+
       )}
     </div>
   );

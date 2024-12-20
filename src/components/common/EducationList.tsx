@@ -21,7 +21,7 @@ export function EducationItem({ data }: { data: Education; }) {
   return (
     <TimelineBox>
       <TimelineDateRange startDate={startDate} endDate={endDate} />
-      <div className="text-bodySecondary flex items-start gap-4">
+      <div className="flex items-start gap-4">
         <LinkOrBox href={school?.link} target="_blank" className="shrink-0">
           <ImageWithFallback
             src={school?.logo}
