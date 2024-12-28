@@ -25,8 +25,8 @@ export const contactInfos: ContactInfo[] = [
   },
   {
     name: 'X',
-    value: 'abagheri1994',
-    url: 'https://x.com/abagheri1994',
+    value: 'doiali',
+    url: 'https://x.com/doiali',
     icon: faXTwitter,
   },
   {
