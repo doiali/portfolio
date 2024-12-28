@@ -24,12 +24,6 @@ export const contactInfos: ContactInfo[] = [
     icon: faLinkedin,
   },
   {
-    name: 'X',
-    value: 'doiali',
-    url: 'https://x.com/doiali',
-    icon: faXTwitter,
-  },
-  {
     name: 'Instagram',
     value: 'pooriabgr',
     url: 'https://www.instagram.com/pooriabgr/',
@@ -46,5 +40,11 @@ export const contactInfos: ContactInfo[] = [
     value: 'doiali',
     url: 'https://www.github.com/doiali/',
     icon: faGithub,
+  },
+  {
+    name: 'X',
+    value: 'doiali',
+    url: 'https://x.com/doiali',
+    icon: faXTwitter,
   },
 ];
