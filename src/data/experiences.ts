@@ -1,10 +1,16 @@
+import pytopia_logo from '@images/company/pytopia_logo.png';
+import filmnet_logo from '@images/company/Filmnet_logo.png';
+import coding_logo from '@images/company/coding.png';
+import { StaticImageData } from 'next/image';
+
+
 export type Experience = {
   slug: string;
   title: string;
   company?: {
     title: string;
     link?: string;
-    logo?: string;
+    logo?: string | StaticImageData;
   };
   links?: string[];
   location?: string;
@@ -22,6 +28,7 @@ export const experiences: Experience[] = [
     company: {
       title: 'Pytopia',
       link: 'https://pytopia.ai/',
+      logo: pytopia_logo,
     },
     location: 'Tehran, Iran',
     startDate: '2023-05-01',
@@ -40,7 +47,8 @@ export const experiences: Experience[] = [
     links: ['https://filmnet.ir/', 'https://tv.filmnet.ir/'],
     company: {
       title: 'Filmnet',
-      link: 'https://filmnet.ir/'
+      link: 'https://filmnet.ir/',
+      logo: filmnet_logo,
     },
     location: 'Tehran, Iran',
     startDate: '2021-01-01',
@@ -53,16 +61,17 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    slug: 'petus-frontend-developer',
+    slug: 'freelance-frontend-developer',
     title: 'Frontend Developer',
     company: {
-      title: 'PETUS',
+      title: 'Freelance',
+      logo: coding_logo,
     },
     location: 'Tehran, Iran',
-    startDate: '2020-06-01',
+    startDate: '2020-01-01',
     endDate: '2021-01-01',
     points: [
-      'delivered 3 successful projects for clients and mastering HTML, CSS, JavaScript, Typescript, React.js, Redux and Material-UI along the way.',
+      'Delivered 3 successful projects for clients and mastering HTML, CSS, JavaScript, Typescript, React.js, Redux and Material-UI along the way.',
       'Participated in backend development (Django) and API designs.',
       'Created the first smart gardening platform in the country, the LDM web application.',
       'Created a project manager application as my first large scale web app.',
