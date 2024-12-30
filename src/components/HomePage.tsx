@@ -4,6 +4,9 @@ import Image from 'next/image';
 import mypic from '@images/alireza_bagheri.jpg';
 import { contactInfos } from '@/data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactMarkdown from 'react-markdown';
+import { homepage_intro } from '@/data/about';
+
 
 export default function HomePage() {
   return (
@@ -15,10 +18,13 @@ export default function HomePage() {
         alt="Alireza Bagheri"
       /> */}
       <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold mt-8">Hello World!</h1>
-        <p className="text-xl mt-4">I&apos;m <b>Alireza Bagheri</b> and I welcome you to my humble website.</p>
-        <p className="text-xl">Explore my site to learn about me, discover the <Link className="text-primary" href="/projects">projects</Link> I&apos;ve worked on, and understand my <Link className="text-primary" href="/about">experiences</Link>.</p>
-        <p className="text-xl">Feel free to reach out if you want to connect or collaborate!</p>
+        <h1 className="text-4xl font-bold my-8">Hello World!</h1>
+        <ReactMarkdown
+          className="prose dark:prose-invert"
+          components={{
+            'a': ({node, ...props}) => <Link {...props} className={props.className + " text-primary"} />,
+          }}
+        >{homepage_intro}</ReactMarkdown>
       </div>
       <ul className="flex flex-col gap-4 my-8">
         {contactInfos.map(({ icon, name, value, url }) => (
