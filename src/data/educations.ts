@@ -1,3 +1,7 @@
+import sharif_logo from '@images/company/Sharif_logo.webp';
+import { StaticImageData } from 'next/image';
+
+
 export type Education = {
   slug: string;
   field: string;
@@ -5,7 +9,7 @@ export type Education = {
   school?: {
     title: string;
     link?: string;
-    logo?: string;
+    logo?: string | StaticImageData;
   };
   location?: string;
   startDate?: string;
@@ -21,6 +25,7 @@ export const educations: Education[] = [
     school: {
       title: 'Sharif University of Technology',
       link: 'http://www.sharif.edu/',
+      logo: sharif_logo,
     },
     location: 'Tehran, Iran',
     startDate: '2017-09-01',
@@ -34,6 +39,7 @@ export const educations: Education[] = [
     school: {
       title: 'Sharif University of Technology',
       link: 'http://www.sharif.edu/',
+      logo: sharif_logo,
     },
     location: 'Tehran, Iran',
     startDate: '2013-09-01',
