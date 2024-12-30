@@ -13,7 +13,7 @@ export type Education = {
   description?: string;
 };
 
-export const educations = [
+export const educations: Education[] = [
   {
     slug: 'msc-sharif-university',
     field: 'Mechatronics Engineering',
@@ -25,6 +25,7 @@ export const educations = [
     location: 'Tehran, Iran',
     startDate: '2017-09-01',
     endDate: '2020-01-01',
+    description: 'Design, fabrication and control of a tilting-rotor quadrotor as my MSc. project, Sharpening my skills in C++, MatLab, Micro controllers, building a real flying vehicle, programming all the systems and going beyond the ambitious project goals by actually getting that thing to FLY!!!',
   },
   {
     slug: 'bsc-sharif-university',

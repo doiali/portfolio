@@ -70,7 +70,7 @@ export default function MainHeader() {
           'bg-background shadow-md': !atTop || isExpanded,
         })}
       >
-        <div className="min-h-[64px] flex max-lg:flex-wrap items-center container overflow-hidden">
+        <div className="min-h-[64px] flex max-lg:flex-wrap items-center container max-w-3xl overflow-hidden">
           <div className="flex h-16 basis-full items-center">
             <div className="hidden sm:block grow">
               <NavbarLinks onClose={() => setIsExpanded(false)} />

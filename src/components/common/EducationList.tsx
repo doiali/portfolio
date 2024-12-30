@@ -42,7 +42,7 @@ export function EducationItem({ data }: { data: Education; }) {
           <h4 className="text-sm">
             {degree}, {field}
           </h4>
-          <p className="text-sm">{description}</p>
+          {description && <p className="text-sm mt-2">{description}</p>}
         </div>
       </div>
     </TimelineBox>

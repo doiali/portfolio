@@ -34,7 +34,7 @@ export default function ProjectItem({ data }: { data: Project; }) {
         </ul>
       )}
       {points && (
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc ms-4 mt-2">
           {points.map((point, i) => (
             <li className="text-sm" key={i}>{point}</li>
           ))}

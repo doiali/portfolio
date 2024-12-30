@@ -11,32 +11,28 @@ export type Experience = {
   startDate?: string;
   endDate?: string;
   description?: string;
+  points?: string[];
 };
 
 export const experiences: Experience[] = [
   {
-    slug: 'applylink-frontend-developer',
+    slug: 'pytopia-frontend-developer',
     title: 'Senior Frontend Developer',
-    links: ['https://applylink.ai/'],
+    links: ['https://pytopia.ai/'],
     company: {
-      title: 'ApplyLink',
-      link: 'https://applylink.ai/',
-    },
-    location: 'Canada (Remote)',
-    startDate: '2023-05-01',
-    endDate: '2024-03-01',
-    description: 'Created a platform for students connecting students with each other and with universities',
-  },
-  {
-    slug: 'nezaja-fullstack-developer',
-    title: 'Fullstack Developer',
-    company: {
-      title: 'NEZAJA',
+      title: 'Pytopia',
+      link: 'https://pytopia.ai/',
     },
     location: 'Tehran, Iran',
-    startDate: '2021-06-01',
-    endDate: '2023-04-01',
-    description: 'Full stack creation of several  web applications (recruitment, evaluation, exam assessment, …) using React, FastAPI and SQL Server.'
+    startDate: '2023-05-01',
+    endDate: '2024-03-01',
+    points: [
+      'Built the whole frontend of a scalable platform as a sole developer in a fast paced startup (pytopia.ai an educational platform with over 10K students, applylink.ai).',
+      'Leveraged the newest frontend technologies like Next.js v14, TailwindCSS v3 and React Query v5.',
+      'Highest performance score on various metrics (100% overall score on GTmetrix).',
+      'Blazingly fast user experience with almost instant back and forth navigation by using emerging 2023 features like server components, streaming, ISR, caching and high quality code.',
+      'Doubling performance of the old Pytopia by a 3x bundle size reduction!'
+    ],
   },
   {
     slug: 'filmnet-frontend-developer',
@@ -49,7 +45,12 @@ export const experiences: Experience[] = [
     location: 'Tehran, Iran',
     startDate: '2021-01-01',
     endDate: '2022-02-01',
-    description: 'Led a team of 6 developers to create a platform for watching movies and TV shows',
+    points: [
+      'Led a team of 6 developers to create filmnet.ir and tv.filmnet.ir using Next.js. Filmnet is a VOD platform with more than 1 million users.',
+      'Mentored team members, leading to significant skill growth in 3 months.',
+      'Collaboration with cross functional teams: design, backend, product, CTO.',
+      'Achieved page load times of below 200ms with the emerging ISR technologies.',
+    ],
   },
   {
     slug: 'petus-frontend-developer',
@@ -60,5 +61,11 @@ export const experiences: Experience[] = [
     location: 'Tehran, Iran',
     startDate: '2020-06-01',
     endDate: '2021-01-01',
+    points: [
+      'delivered 3 successful projects for clients and mastering HTML, CSS, JavaScript, Typescript, React.js, Redux and Material-UI along the way.',
+      'Participated in backend development (Django) and API designs.',
+      'Created the first smart gardening platform in the country, the LDM web application.',
+      'Created a project manager application as my first large scale web app.',
+    ],
   }
 ];

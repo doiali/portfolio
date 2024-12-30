@@ -17,7 +17,7 @@ export default function ExperienceList({ data }: { data: Experience[]; }) {
 
 export function ExperienceItem({ data }: { data: Experience; }) {
   const {
-    title, startDate, endDate, company, description, links,
+    title, startDate, endDate, company, description, links, points,
   } = data;
   return (
     <TimelineBox>
@@ -47,6 +47,13 @@ export function ExperienceItem({ data }: { data: Experience; }) {
             ))}
           </p>
           <p className="text-sm">{description}</p>
+          {points && (
+            <ul className="list-disc mt-2">
+              {points.map((point, i) => (
+                <li className="text-sm" key={i}>{point}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </TimelineBox>

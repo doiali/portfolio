@@ -1,0 +1,16 @@
+export const tools = [
+  ['React.js', 'Next.js', 'Typescript'],
+  ['JavaScript', 'Node.js'],
+  ['HTML', 'CSS', 'Bootstrap'],
+  ['TailwindCSS', 'ShadCN'],
+  ['MUI', 'Emotion', 'DaisyUI'],
+  ['RestAPI', 'SWR', 'ReactQuery'],
+  ['Redux', 'Zustand', 'React Context'],
+  ['Jest', 'React Testing Library'],
+  ['Git', 'Vite', 'webpack'],
+  ['SQL Server', 'PostgreSQL'],
+  ['NextAuth', 'Prisma'],
+  ['Vercel', 'AWS', 'Supabase'],
+  ['Python', 'FastApi', 'SQLAlchemy'],
+  ['C', 'C++', 'Matlab'],
+];
