@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <PageContainer>
       <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold my-8">Hello World!</h1>
+        <h1 className="text-4xl font-bold mb-4">Hello World!</h1>
         <ReactMarkdown
           className="prose dark:prose-invert"
           components={{
