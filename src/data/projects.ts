@@ -124,8 +124,9 @@ export const getProjects: () => Project[] = () => [
   {
     slug: 'tv-filmnet',
     title: 'Film Net for TV',
-    description: 'A platform for watching movies and TV shows on TV.',
+    description: 'A streaming platform with over 1 million users.',
     points: [
+      'Leveraged the power of newly introduced Next.js ISR',
       'Featuring spatial navigation using arrow keys',
       'Support a wide range of old browsers',
     ],
@@ -150,14 +151,14 @@ export const getProjects: () => Project[] = () => [
   {
     slug: 'petus',
     title: 'LDM Panel',
-    description: 'A panel for managing the LDM system for PETUS company.',
+    description: 'The first smart gardening platform in the country',
     tools: ['React.js', 'Material-UI', 'React-Router', 'Redux', 'React-Redux'],
     date: '2020',
   },
   {
     slug: 'italian-dream',
     title: 'Italian Dream',
-    description: 'A website for guiding students to study in Italy.',
+    description: 'A static website for guiding students to study in Italy. It was my the start of my journey in web development.',
     tools: ['HTML5', 'CSS3', 'JavaScript', 'BootStrap', 'JQuery', 'PHP'],
     date: '2020',
   }
