@@ -5,6 +5,8 @@ import EducationList from './common/EducationList';
 import { educations } from '@/data/educations';
 import HonorsList from './common/HonorsList';
 import { honors } from '@/data/honors';
+import ReactMarkdown from 'react-markdown';
+import { about_intro } from '@/data/about';
 
 export default function AboutPage() {
   return (
@@ -22,11 +24,11 @@ export default function AboutPage() {
           <source src="/videos/introduction.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <p className="order-2 text-lg mt-4">
-          Hi, I&apos;m Alireza Bagheri, 29 years old with over 4 years of experience as a Senior Frontend Developer. I specialize in React.js and Next.js.<br />
-          I started programming during my mechanical engineering studies because I really liked it. For my master’s degree, I studied Mechatronics Engineering and worked on flying robots. After finishing school, I decided to become a web developer because I found it very interesting. <br />
-          Today, I am proud of the great projects I have worked on. I am excited to keep working as a developer, make fast and beautiful applications, and learn more new things along the way.
-        </p>
+        <div className="order-2 text-lg mt-4">
+          <ReactMarkdown
+            className="prose dark:prose-invert"
+          >{about_intro}</ReactMarkdown>
+        </div>
       </div>
       <ExperienceList data={experiences} />
       <EducationList data={educations} />
