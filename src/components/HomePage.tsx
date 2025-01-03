@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import PageContainer from './common/PageContainer';
-import Image from 'next/image';
-import mypic from '@images/alireza_bagheri.jpg';
 import { contactInfos } from '@/data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactMarkdown from 'react-markdown';
@@ -11,18 +9,12 @@ import { homepage_intro } from '@/data/about';
 export default function HomePage() {
   return (
     <PageContainer>
-      {/* <Image
-        priority
-        src={mypic}
-        className="w-[min(100%,300px)] mx-auto rounded-lg"
-        alt="Alireza Bagheri"
-      /> */}
       <div className="max-w-2xl">
         <h1 className="text-4xl font-bold my-8">Hello World!</h1>
         <ReactMarkdown
           className="prose dark:prose-invert"
           components={{
-            'a': ({node, ...props}) => <Link {...props} className={props.className + " text-primary"} />,
+            'a': ({ node, ...props }) => <Link {...props} className={props.className + " text-primary"} />,
           }}
         >{homepage_intro}</ReactMarkdown>
       </div>

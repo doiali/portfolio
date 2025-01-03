@@ -13,17 +13,6 @@ export default function AboutPage() {
     <PageContainer>
       <h1 className="text-4xl font-bold">About Me</h1>
       <div className="mt-4">
-        {/* <video
-          className="w-[min(100%,500px)] mx-auto mb-2 lg:float-end lg:ms-4"
-          poster="/videos/introduction.jpg"
-          width="1920"
-          height="1080"
-          controls
-          preload="none"
-        >
-          <source src="/videos/introduction.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
         <div className="order-2 text-lg mt-4">
           <ReactMarkdown
             className="prose dark:prose-invert"
