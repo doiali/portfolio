@@ -54,7 +54,7 @@ export const getProjects: () => Project[] = () => [
     ],
     tools: ['Next.js', 'TailwindCSS', 'React-Query', 'Next-INTL'],
     date: '2024',
-    links: ['https://pytopia.ai/', 'https://applylink.ai/'],
+    links: ['https://pytopia.ai/en'],
     gallery: [
       applylink_home_en_dark,
       applylink_home_en_light,
