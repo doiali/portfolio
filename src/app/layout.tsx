@@ -14,7 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Alireza Bagheri",
-  description: "Senior frontend developer passionate about building fast, high-performance applications with modern web technologies.",
+  description: "Full stack developer passionate about building fast, high-performance applications with modern web technologies.",
   openGraph: {
     title: '',
     type: "website",
