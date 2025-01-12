@@ -1,46 +1,56 @@
-import 'server-only';
-import { StaticImageData } from 'next/image';
-import applylink_dashboard_helpboard_bookmarks from './gallery/applylink_dashboard_helpboard_bookmarks.png';
-import applylink_dashboard_helpboard_overview from './gallery/applylink_dashboard_helpboard_overview.png';
-import applylink_helpboard from './gallery/applylink_helpboard.png';
-import applylink_helpboard_2 from './gallery/applylink_helpboard_2.png';
-import applylink_home_en_dark from './gallery/applylink_home_en_dark.png';
-import applylink_home_en_light from './gallery/applylink_home_en_light.png';
-import applylink_home_fa_dark from './gallery/applylink_home_fa_dark.png';
-import applylink_profile_hejazizo from './gallery/applylink_profile_hejazizo.png';
-import applylink_event from './gallery/applylink_event.png';
-import applylink_profile_hejazizo_experiences from './gallery/applylink_profile_hejazizo_experiences.png';
-import applylink_roadmap from './gallery/applylink_roadmap.png';
-import applylink_signup from './gallery/applylink_signup.png';
-import oya_home from './gallery/oya_home.png';
-import oya_report from './gallery/oya_report.png';
-import oya_calendar from './gallery/oya_calendar.png';
-import oya_clocks from './gallery/oya_clocks.png';
-import oya_charts from './gallery/oya_charts.png';
-import filmnet_home from './gallery/filmnet_home.jpg';
-import filmnet_kids from './gallery/filmnet_kids.jpg';
-import filmnet_single from './gallery/filmnet_single.jpg';
-import filmnet_videos from './gallery/filmnet_videos.jpg';
-import filmnet_profile from './gallery/filmnet_profile.jpg';
-import tv_filmnet_home from './gallery/tv_filmnet_home.jpg';
-import tv_filmnet_search from './gallery/tv_filmnet_search.jpg';
-import tv_filmnet_single from './gallery/tv_filmnet_single.jpg';
-import tv_filmnet_details from './gallery/tv_filmnet_details.jpg';
-import tv_filmnet_login from './gallery/tv_filmnet_login.jpg';
+import 'server-only'
+import { StaticImageData } from 'next/image'
+import applylink_dashboard_helpboard_bookmarks from './gallery/applylink_dashboard_helpboard_bookmarks.png'
+import applylink_dashboard_helpboard_overview from './gallery/applylink_dashboard_helpboard_overview.png'
+import applylink_helpboard from './gallery/applylink_helpboard.png'
+import applylink_helpboard_2 from './gallery/applylink_helpboard_2.png'
+import applylink_home_en_dark from './gallery/applylink_home_en_dark.png'
+import applylink_home_en_light from './gallery/applylink_home_en_light.png'
+import applylink_home_fa_dark from './gallery/applylink_home_fa_dark.png'
+import applylink_profile_hejazizo from './gallery/applylink_profile_hejazizo.png'
+import applylink_event from './gallery/applylink_event.png'
+import applylink_profile_hejazizo_experiences from './gallery/applylink_profile_hejazizo_experiences.png'
+import applylink_roadmap from './gallery/applylink_roadmap.png'
+import applylink_signup from './gallery/applylink_signup.png'
+import oya_home from './gallery/oya_home.png'
+import oya_report from './gallery/oya_report.png'
+import oya_calendar from './gallery/oya_calendar.png'
+import oya_clocks from './gallery/oya_clocks.png'
+import oya_charts from './gallery/oya_charts.png'
+import filmnet_home from './gallery/filmnet_home.jpg'
+import filmnet_kids from './gallery/filmnet_kids.jpg'
+import filmnet_single from './gallery/filmnet_single.jpg'
+import filmnet_videos from './gallery/filmnet_videos.jpg'
+import filmnet_profile from './gallery/filmnet_profile.jpg'
+import tv_filmnet_home from './gallery/tv_filmnet_home.jpg'
+import tv_filmnet_search from './gallery/tv_filmnet_search.jpg'
+import tv_filmnet_single from './gallery/tv_filmnet_single.jpg'
+import tv_filmnet_details from './gallery/tv_filmnet_details.jpg'
+import tv_filmnet_login from './gallery/tv_filmnet_login.jpg'
 
 
 export type Project = {
-  slug: string;
-  title: string;
-  description?: string;
-  points?: string[];
-  tools?: string[];
-  links?: string[];
-  gallery?: (StaticImageData)[];
-  date?: string;
-};
+  slug: string
+  title: string
+  description?: string
+  points?: string[]
+  tools?: string[]
+  links?: string[]
+  gallery?: (StaticImageData)[]
+  date?: string
+}
 
 export const getProjects: () => Project[] = () => [
+  {
+    slug: 'actionbitz',
+    title: 'Actionbitz',
+    description: 'An easy to use todo application, with powerful reports, aimed to boost productivity',
+    points: [],
+    tools: ['Next.js', 'NextAuth', 'PostgreSQL', 'Supabase', 'Prisma', 'React Query', 'Vercel'],
+    date: '2025',
+    links: ['https://actionbitz.com'],
+    gallery: [],
+  },
   {
     slug: 'applylink',
     title: 'ApplyLink',
@@ -162,4 +172,4 @@ export const getProjects: () => Project[] = () => [
     tools: ['HTML5', 'CSS3', 'JavaScript', 'BootStrap', 'JQuery', 'PHP'],
     date: '2020',
   }
-];
+]
