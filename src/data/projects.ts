@@ -27,6 +27,12 @@ import tv_filmnet_search from './gallery/tv_filmnet_search.jpg'
 import tv_filmnet_single from './gallery/tv_filmnet_single.jpg'
 import tv_filmnet_details from './gallery/tv_filmnet_details.jpg'
 import tv_filmnet_login from './gallery/tv_filmnet_login.jpg'
+import ab_home from './gallery/actionbitz/landing.png'
+import ab_future from './gallery/actionbitz/future.png'
+import ab_now from './gallery/actionbitz/now.png'
+import ab_now_sm from './gallery/actionbitz/now-sm.png'
+import ab_past_sm from './gallery/actionbitz/past-sm.png'
+import ab_report_sm from './gallery/actionbitz/report-sm.png'
 
 
 export type Project = {
@@ -49,7 +55,14 @@ export const getProjects: () => Project[] = () => [
     tools: ['Next.js', 'NextAuth', 'PostgreSQL', 'Supabase', 'Prisma', 'React Query', 'Vercel'],
     date: '2025',
     links: ['https://actionbitz.com'],
-    gallery: [],
+    gallery: [
+      ab_home,
+      ab_now,
+      ab_report_sm,
+      ab_future,
+      ab_past_sm,
+      ab_now_sm,
+    ],
   },
   {
     slug: 'applylink',
@@ -82,8 +95,8 @@ export const getProjects: () => Project[] = () => [
   },
   {
     slug: 'gp',
-    title: 'NEZAJA Recruitment Platform',
-    description: 'Recruitment and evaluation platform for NEZAJA',
+    title: 'Internal Recruitment Platform',
+    description: 'Recruitment and evaluation platform for hiring new employees.',
     points: [
       'Multiple micro frontend applications with a shared layout and authentication system',
       'Handling lots of large data tables by virtualizing them with react-window',
