@@ -33,6 +33,7 @@ import ab_now from './gallery/actionbitz/now.png'
 import ab_now_sm from './gallery/actionbitz/now-sm.png'
 import ab_past_sm from './gallery/actionbitz/past-sm.png'
 import ab_report_sm from './gallery/actionbitz/report-sm.png'
+import colorsforge from './gallery/colorsforge.png'
 
 
 export type Project = {
@@ -47,6 +48,20 @@ export type Project = {
 }
 
 export const getProjects: () => Project[] = () => [
+  {
+    slug: 'colorsforge',
+    title: 'ColorsForge',
+    description: 'Comprehensive color picker and color converter tools for modern CSS color spaces',
+    points: [
+      'supporting sRGB, HSL, HWB, LCH, Lab, OKLCH, OKLAB, XYZ and P3 colors spaces'
+    ],
+    tools: ['Next.js', 'Color.js'],
+    date: '2025',
+    links: ['https://colorsforge.com'],
+    gallery: [
+      colorsforge,
+    ],
+  },
   {
     slug: 'actionbitz',
     title: 'Actionbitz',
