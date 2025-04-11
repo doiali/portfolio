@@ -17,7 +17,5 @@ Feel free to reach out if you want to connect or collaborate!
 `
 
 export const about_intro = `
-Hi, I'm Alireza Bagheri! A curious engineer with 5 years of experience as a Frontend Developer specialized in Typescript and React.  
-I started programming during my mechanical engineering studies. I got super excited whenever I had to code for robotics or microcontroller projects. So for my master’s degree, I studied Mechatronics Engineering to be further engaged with programming. After finishing school, I decided to become a web developer out of curiosity about the web and the internet! It’s one of the most exciting technologies and we are lucky to live in this era!  
-Now after 5 years of experience in frontend development (and 2 years of trying backend development with python). I still see a long way to go, exciting projects to build and wonderful emerging technologies to learn and adapt.
+Hi, I'm Alireza Bagheri, a Curious engineer with 12 years of coding as a personal passion, 5 years of professional experience as a frontend developer and spending the last 3 years exploring backend and full-stack development through side projects. Graduated from Iran’s best technical university, building strong foundations in mechatronics. Proficient with 50+ tools and quick to adopt new technologies. Proven leadership skills, having guided teams of up to 6 members.
 `
