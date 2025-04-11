@@ -22,6 +22,21 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    slug: 'solopreneur',
+    title: 'Solopreneur',
+    links: ['https://actionbitz.com/','https://colorsforge.com/'],
+    location: 'Hasselt, Belgium',
+    startDate: '2025-01-01',
+    points: [
+      'Exploring entrepreneurship by independently turning ideas into scalable SaaS products.  ',
+      'Created actionbitz.com, a unique todo app that doubles as a personal action journal.',
+      'Created colorsforge.com, an open-source interactive color picker supporting modern spaces like OKLCH, OKLab, P3, XYZ and more.',
+      'Adapted to modern tools: Next.js 15, React 19, Authjs, Prisma, PostgreSQL, Supabase, Vercel, shadcn-ui.',
+      'Learning AI and LLM integrations.',
+      
+    ],
+  },
+  {
     slug: 'pytopia-frontend-developer',
     title: 'Senior Frontend Developer',
     links: ['https://pytopia.ai/'],
