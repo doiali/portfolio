@@ -11,9 +11,7 @@ And most importantly:
 
 - Contribute to __building exciting stuff__, from MVPs to large scale applications!  
 
-Got anything you want built? Just drop me a message and let’s have a call!  
 Here's my work [experiences](/about) and some [projects](/projects) I've worked on.  
-Feel free to reach out if you want to connect or collaborate!
 `
 
 export const about_intro = `
