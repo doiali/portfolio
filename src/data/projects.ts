@@ -229,10 +229,9 @@ export const getProjects: () => Project[] = () => [
       "A heat transfer simulator, written in MATLAB.",
       "Image processing and transformation tools created in MATLAB.",
       "Explored implementing machine learning algorithms in MATLAB.",
-      "Explored writing machine learning algorithms in MATLAB.",
       "Desktop games like Tic Tac Toe and Snake, written in C.",
       "Extensive experience in 3D modeling using SolidWorks and AutoCAD, as well as mechanical design, analysis and simulation, manufacturing, CNC programming, and 3D printing.",
-      "Designed electronic circuits, worked with microcontrollers, and developed mechatronic systems for various mini-projects."
+      "Designed electronic circuits, worked with microcontrollers, and developed mechatronic systems for various projects."
     ],
     tools: ['React.js', 'Next.js', 'TypeScript', 'redux', 'react-router', 'Bootstrap', 'JQuery', 'PHP', 'MUI', 'Django', 'C', 'C++', 'C#', 'MatLab', 'HTML', 'CSS', 'Vanilla JS'],
     date: '2013 - 2022',
