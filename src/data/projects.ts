@@ -213,7 +213,7 @@ export const getProjects: () => Project[] = () => [
     slug: 'more_projects',
     title: 'And many more',
     points: [
-      "An internal recruitment platform for a large company, handling 400,000 recruitees. Built with React.js, FastAPI, SQLAlchemy, and SQL Server.",
+      "An internal recruitment platform for a large organization, handling 400,000 recruitees. Built with React.js, FastAPI, SQLAlchemy, and SQL Server.",
       "A university entrance exam scoring system, handling 20,000 participants annually.",
       "A B2B project management application for managing projects, contracts, clients, and tasks.",
       "The first smart gardening platform in the country, managing irrigation, humidity, temperature, and light. Allows scheduling irrigations and remote garden control. Built with React and Django.",
