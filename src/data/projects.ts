@@ -34,6 +34,15 @@ import ab_now_sm from './gallery/actionbitz/now-sm.png'
 import ab_past_sm from './gallery/actionbitz/past-sm.png'
 import ab_report_sm from './gallery/actionbitz/report-sm.png'
 import colorsforge from './gallery/colorsforge.png'
+import btqr_btqr from './gallery/btqr/btqr.png'
+import btqr_full_vehicle from './gallery/btqr/full_vehicle.jpg'
+import btqr_me_working from './gallery/btqr/me_working.jpg'
+import btqr_raw_body from './gallery/btqr/raw_body.png'
+import btqr_underneath from './gallery/btqr/underneath.png'
+import btqr_body from './gallery/btqr/body.png'
+import btqr_rotor from './gallery/btqr/rotor.png'
+import btqr_servo from './gallery/btqr/servo.png'
+import btqr_me_sleeping from './gallery/btqr/me_sleeping.jpg'
 
 
 export type Project = {
@@ -227,5 +236,16 @@ export const getProjects: () => Project[] = () => [
     ],
     tools: ['React.js', 'Next.js', 'TypeScript', 'redux', 'react-router', 'Bootstrap', 'JQuery', 'PHP', 'MUI', 'Django', 'C', 'C++', 'C#', 'MatLab', 'HTML', 'CSS', 'Vanilla JS'],
     date: '2013 - 2022',
+    gallery: [
+      btqr_btqr,
+      btqr_full_vehicle,
+      btqr_me_working,
+      btqr_raw_body,
+      btqr_underneath,
+      btqr_body,
+      btqr_rotor,
+      btqr_servo,
+      btqr_me_sleeping,
+    ]
   },
 ]
