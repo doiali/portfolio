@@ -34,7 +34,7 @@ export function EducationItem({ data }: { data: Education; }) {
           />
         </LinkOrBox>
         <div className="flex flex-col">
-          <h3 className="text-lg font-bold">
+          <h3 className="text-lg font-semibold">
             <LinkOrBox href={school?.link} target="_blank" className="inline">
               {school?.title}
             </LinkOrBox>

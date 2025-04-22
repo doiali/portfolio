@@ -150,7 +150,7 @@ export const getProjects: () => Project[] = () => [
     ],
     tools: ['Next.js', 'Emotion', 'swr', 'jest', 'React-Testing-Library'],
     date: '2022',
-    links: ['https://filmnet.ir/'],
+    links: ['https://filmnet.ir/', 'https://tv.filmnet.ir/'],
     gallery: [
       filmnet_home,
       filmnet_kids,
@@ -200,4 +200,26 @@ export const getProjects: () => Project[] = () => [
   //   tools: ['HTML5', 'CSS3', 'JavaScript', 'BootStrap', 'JQuery', 'PHP'],
   //   date: '2020',
   // }
+  {
+    slug: 'more_projects',
+    title: 'And many more',
+    points: [
+      'An internal recruitment platform for a large company, handling 400,000 recruitees. Made with React.js, FastAPI, SQLAlchemy and SQL Server.',
+      'A university entrance exam scoring system, handling 20,000 participants every year.',
+      'The first smart gardening platform in the country.',
+      'A B2B project manager application for managing projects, contracts, clients and tasks.',
+      'A tilt quadrotor flight simlulator, written in MatLab.',
+      'A tilt quadrotor real flight control system, written in C++.',
+      'A turbine simulation desktop application, written in C#.',
+      'OYA, A personal time tracking platform for logging and visualizing the time spent on different activities, which is evolving to clockbitz.com in 2025.',
+      'Design, build and code a smart wristband for parkinson patients, which detects shaking hand and locks the hand from shaking. Writen in C',
+      'Robot path finder simalator using dijkstra algorithm, written in Matlab.',
+      'Numerical differenital equation solver, written in Matlab.',
+      'Heat transfer simulator, written in Matlab.',
+      'Created image processing and transform tools in Matlab.',
+      'Desktop games like tic tac toe and snake, written in C.',
+    ],
+    tools: ['React.js', 'Next.js', 'TypeScript', 'redux', 'react-router', 'Bootstrap', 'JQuery', 'PHP', 'MUI', 'DJango', 'C', 'C++', 'C#', 'MatLab', 'HTML', 'CSS', 'Vanilla JS'],
+    date: '2013 - 2022',
+  },
 ]

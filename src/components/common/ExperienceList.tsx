@@ -35,12 +35,12 @@ export function ExperienceItem({ data }: { data: Experience; }) {
           />
         </LinkOrBox>
         <div className="flex flex-col">
-          <h3 className="text-lg font-bold">
+          <h3 className="text-lg font-semibold">
             <LinkOrBox href={company?.link} target="_blank" className="inline">
               {company?.title}
             </LinkOrBox>
           </h3>
-          <h4 className="text-base font-bold">{title}</h4>
+          <h4 className="text-base font-semibold">{title}</h4>
           <p className="text-sm text-muted-foreground flex flex-col mb-2 mt-1">
             {links?.map(link => (
               <Link key={link} href={link} target="_blank">{link}</Link>
@@ -48,7 +48,7 @@ export function ExperienceItem({ data }: { data: Experience; }) {
           </p>
           <p className="text-sm">{description}</p>
           {points && (
-            <ul className="list-disc mt-2">
+            <ul className="list-disc my-2 space-y-2">
               {points.map((point, i) => (
                 <li className="text-sm" key={i}>{point}</li>
               ))}

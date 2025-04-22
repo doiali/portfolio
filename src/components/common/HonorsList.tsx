@@ -19,7 +19,7 @@ export function HonorItem({ data }: { data: HonorType; }) {
     <TimelineBox>
       <TimelineDateRange date={date} />
       <div className="flex flex-col">
-        <h3 className="text-base font-bold">{title}</h3>
+        <h3 className="text-base font-semibold">{title}</h3>
         <p className="text-sm">{description}</p>
       </div>
     </TimelineBox>
