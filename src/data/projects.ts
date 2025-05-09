@@ -64,11 +64,11 @@ export const getProjects: () => Project[] = () => [
     points: [
       'supporting sRGB, HSL, HWB, LCH, Lab, OKLCH, OKLAB, XYZ and P3 colors spaces'
     ],
-    tools: ['Next.js', 'Color.js'],
+    // tools: ['Next.js', 'Color.js'],
     date: '2025',
     links: ['https://colorsforge.com'],
     gallery: [
-      colorsforge,
+      // colorsforge,
     ],
   },
   {
